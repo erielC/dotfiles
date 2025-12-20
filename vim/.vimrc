@@ -1,3 +1,5 @@
+" ~/.vimrc (or ~/.config/nvim/init.vim for Neovim)
+
 " Basic settings
 set number
 set relativenumber
@@ -40,4 +42,6 @@ vnoremap <C-c> "+y
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
 " black and white
-syntax off
+syntax on
+colorscheme pablo
+
