@@ -1,6 +1,7 @@
 -- =========================
 -- INDENTATION (you already have these, keeping for clarity)
 -- =========================
+vim.g.mapleader = " "      -- Set to Spacebar (most common)
 vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
@@ -76,4 +77,7 @@ map("n", "<leader><Down>",  ":resize -5<CR>")
 
 -- Clear search highlight
 map("n", "<leader>c", ":nohlsearch<CR>")
+
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+
 
